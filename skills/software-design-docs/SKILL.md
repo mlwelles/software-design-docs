@@ -1,6 +1,6 @@
 ---
 name: software-design-docs
-description: Use when writing, structuring, or reviewing a software design document — a design doc, technical design, RFC, or architecture write-up. Provides a test for whether the doc should exist (the when-to-write test), a rule for what to put in it (the cost-of-being-wrong test), a catalog of sections (core vs situational) with per-section guidance, fill-in templates, and a pre-share checklist. Distilled from Michael Lynch's "Write an Effective Design Doc."
+description: Use when writing, structuring, or reviewing a software design document — a design doc, technical design, RFC, or architecture write-up. Applies after decisions are made, as the agent drafts or structures the document (not during pre-decision ideation — use superpowers:brainstorming for that). Provides a test for whether the doc should exist (the when-to-write test), a rule for what to put in it (the cost-of-being-wrong test), a catalog of sections (core vs situational) with per-section guidance, fill-in templates, and a pre-share checklist. Distilled from Michael Lynch's "Write an Effective Design Doc."
 ---
 
 # Software Design Docs
@@ -24,9 +24,9 @@ When an agent writes, structures, or reviews a design doc, this skill supplies:
 
 ## Two modes
 
-**Quick reference (default).** The agent is already drafting. Pull the section catalog, apply the cost-of-being-wrong test to choose sections, follow the per-section guidance, fill a template, then run the checklist and a writing-quality pass.
+**Quick reference (default).** The agent is already drafting. LOAD `references/section-guide.md` and `references/cost-of-being-wrong.md`, apply the cost-of-being-wrong test to choose sections, follow the per-section guidance, fill a template, then run the checklist and a writing-quality pass.
 
-**Guided walkthrough (complex or high-stakes docs).** Step through: (1) run the when-to-write test; (2) select sections with the cost-of-being-wrong test; (3) draft each chosen section using the section guide; (4) review against the checklist and the writing skills. Use this when the system is large, the decisions are hard to reverse, or the reader asks to be walked through it.
+**Guided walkthrough (complex or high-stakes docs).** Step through: (1) LOAD `references/when-to-write.md` and run the test; (2) LOAD `references/cost-of-being-wrong.md` and select sections; (3) LOAD `references/section-guide.md` and draft each chosen section; (4) review against `checklist.md` and the writing skills. Use this when the system is large, the decisions are hard to reverse, or the reader asks to be walked through it.
 
 ## Principles (the short version)
 
@@ -38,6 +38,15 @@ When an agent writes, structures, or reviews a design doc, this skill supplies:
 - Define terms inline, where the reader meets them, instead of in a separate glossary.
 - Record the alternatives you rejected and why, to answer "why not X?" before it is asked.
 - Leave out trivial reversible decisions, exhaustive implementation detail, and a log of every rejected idea.
+
+## Never do these things
+
+- **Never paste a photographed whiteboard.** It freezes a decision you will want to change; use an editable tool instead.
+- **Never frame goals as implementation.** "Add Kubernetes" is not a goal. "Minimize deploy-related outages" is.
+- **Never document a reversible decision** just because you made it. Cheap-to-fix decisions (page size, button color, swappable vendors) waste the reader's attention and bury the decisions that matter.
+- **Never put a term in a glossary if you can define it inline.** A glossary forces the reader to jump sections; inline definitions keep context at the point of first contact.
+- **Never transcribe every rejected idea** in Alternatives Considered. Summarize each rejected option in a few lines; a complete log of every idea buries the reasoning.
+- **Never write the doc before the doc is warranted.** Run the when-to-write test first; forcing a design doc on a small, reversible, single-author change wastes time and produces a document no one reads.
 
 ## Relationship to other skills
 
