@@ -13,7 +13,7 @@ Answer yes or no:
 5. Are the goals or requirements still ambiguous?
 6. Could a design-phase mistake cause catastrophic, hard-to-undo damage?
 
-**Two or more "yes" answers → a design doc is worth writing.** One or zero → consider skipping it, or write the minimal template instead.
+**Any "yes" → a design doc is likely worth the effort. Two or more "yes" answers → it is almost certainly worth it.** Zero "yes" answers → consider skipping the doc, or write the minimal template instead.
 
 ## Sometimes zero is the right answer
 

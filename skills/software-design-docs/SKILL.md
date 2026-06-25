@@ -1,6 +1,6 @@
 ---
 name: software-design-docs
-description: Use when writing, structuring, or reviewing a software design document — a design doc, technical design, RFC, or architecture write-up. Applies after decisions are made, as the agent drafts or structures the document (not during pre-decision ideation — use superpowers:brainstorming for that). Provides a test for whether the doc should exist (the when-to-write test), a rule for what to put in it (the cost-of-being-wrong test), a catalog of sections (core vs situational) with per-section guidance, fill-in templates, and a pre-share checklist. Distilled from Michael Lynch's "Write an Effective Design Doc."
+description: Use when writing, structuring, or reviewing a software design document — a design doc, technical design, RFC, or architecture write-up. Applies after decisions are made, as the agent drafts or structures the document (not during pre-decision ideation — use superpowers:brainstorming for that). This skill is for the design-document artifact itself — not an implementation/build plan (see superpowers:writing-plans) or a standalone architecture diagram (see c4-architecture). Provides a test for whether the doc should exist (the when-to-write test), a rule for what to put in it (the cost-of-being-wrong test), a catalog of sections (core vs situational) with per-section guidance, fill-in templates, and a pre-share checklist. Distilled from Michael Lynch's "Write an Effective Design Doc."
 ---
 
 # Software Design Docs

@@ -3,7 +3,7 @@
 Run this before you circulate a design doc.
 
 ## Existence and scope
-- [ ] The when-to-write test scored two or more "yes," or you deliberately chose the minimal template.
+- [ ] At least one when-to-write question is a "yes" (any "yes" justifies a doc; two or more makes it almost certain), or you deliberately chose the minimal template.
 - [ ] Every documented decision is costly to reverse. Reversible decisions are cut.
 
 ## The spine
