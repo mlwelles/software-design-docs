@@ -43,7 +43,7 @@ skills/software-design-docs/
 
 ## Installation
 
-### With openskills (recommended — works across Claude Code, opencode, Zed, Codex)
+### With openskills (recommended — works across Claude Code, opencode, Zed, Codex, Cursor)
 
 The `openskills` CLI (https://github.com/numman-ali/openskills#readme) is a universal skills loader for AI coding agents.
 
@@ -55,7 +55,7 @@ openskills install mlwelles/software-design-docs
 openskills sync
 ```
 
-`openskills sync` writes a skills table into your `AGENTS.md`, so opencode, Zed, and Codex load the skill with `npx openskills read software-design-docs`.
+`openskills sync` writes a skills table into your `AGENTS.md`, so opencode, Zed, Codex, and Cursor load the skill with `npx openskills read software-design-docs`.
 
 ### Claude Code
 
@@ -66,9 +66,9 @@ git clone https://github.com/mlwelles/software-design-docs
 cp -r software-design-docs/skills/software-design-docs ~/.claude/skills/
 ```
 
-### opencode / Zed / Codex (manual)
+### opencode / Zed / Codex / Cursor (manual)
 
-These tools load skills listed in an `AGENTS.md`. After installing the skill, run `openskills sync -o /path/to/AGENTS.md`, or add an entry to the `<available_skills>` block by hand.
+These tools load skills from an `AGENTS.md` in the project root. After installing the skill, run `openskills sync` (or `openskills sync -o /path/to/AGENTS.md` to target a specific file), or add an entry to the `<available_skills>` block by hand. Each tool then loads the skill on demand with `npx openskills read software-design-docs`.
 
 ### Other agentic tools
 
