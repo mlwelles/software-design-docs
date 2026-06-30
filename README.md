@@ -23,7 +23,7 @@ The skill triggers when an agent writes, structures, or reviews a design doc (de
 - offers fill-in templates (full and minimal), and
 - checks the result against a pre-share checklist.
 
-It composes with prose-quality skills (`writing-clearly-and-concisely`, `technical-writing-density`) when they are present, and defers diagrams to dedicated diagram skills.
+It composes with prose-quality skills ([`writing-clearly-and-concisely`](https://github.com/softaworks/agent-toolkit/tree/main/skills/writing-clearly-and-concisely), [`technical-writing-density`](https://github.com/mlwelles/technical-writing-density)) when they are present, and defers diagrams to dedicated diagram skills.
 
 ## What's inside
 
